@@ -166,7 +166,7 @@ function modifiedUserCenter(e) {
   return (
     e.data &&
       0 !== e.data.length &&
-      e.data.cards &&
+      e.data.cards && e.data.items&&
       (e.data.cards = Object.values(e.data.cards).filter(
         (e) => "personal_vip" != e.items[0].type
       ))&&

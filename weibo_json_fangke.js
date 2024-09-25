@@ -168,7 +168,7 @@ function modifiedUserCenter(e) {
       0 !== e.data.length &&
       e.data.cards &&
       (e.data.cards = Object.values(e.data.cards).filter(
-        (e) => "personal_accessrecord" != e.items[5].type
+        (e) => "personal_setting" != e.items[0].type
         // "personal_vip" != e.items[0].type
       )),
     e
